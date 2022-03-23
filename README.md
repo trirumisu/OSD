@@ -8,6 +8,11 @@ ArcGIS Python Toolbox for Optimal demand-supply analysis.
 
 1. [说明](#说明)
 2. [安装](#安装)
+3. [数据准备](#数据准备)
+4. [工具使用及结果](#工具使用及结果)
+5. [授权](#授权)
+6. [报告错误](#报告错误)
+
 
 
 
@@ -29,21 +34,25 @@ ArcGIS Python Toolbox for Optimal demand-supply analysis.
 ### Step 4: 连接工具箱
 在ArcGIS中，导航到文件目录，单击工具。 
 
+## 数据准备
+提前准备好**供给点数据**（Shapefile或文件地理数据库要素类）、**需求点数据**（Shapefile或文件地理数据库要素类）、**路网数据**（可选）（网络数据集）。
+其中供给点需要含有供给数量的字段、需求点数据需要含有需求数据量的字段。网络数据集的具体构建见：https://desktop.arcgis.com/zh-cn/arcmap/latest/extensions/network-analyst/exercise-1-creating-a-network-dataset.html
+![daytype](https://github.com/trirumisu/OSD/blob/main/data.png)
+* 注意：
+在构建网络数据集时，若以距离为阻抗成本应将属性名称重命名为**Length**，若以驾驶时间为阻抗成本应将属性名称重命名为**Drivetime**。
+![note](https://github.com/trirumisu/OSD/blob/main/note.png)
 ## 工具使用及结果
 ### Step 1: 打开工具
-
+![interface](https://github.com/trirumisu/OSD/blob/main/interface.png)
 ### Step 2: 输入数据
-
+![input](https://github.com/trirumisu/OSD/blob/main/input.png)
 ### Step 3: 运行工具，输出结果
-
-## 支持数据格式
-* 供给点数据（必选）:
-* 需求点数据（必选）:
-* 路网数据（可选）:
-
+![run](https://github.com/trirumisu/OSD/blob/main/run.png)
+![result1](https://github.com/trirumisu/OSD/blob/main/result1.png)
+![result2](https://github.com/trirumisu/OSD/blob/main/result2.png)
 ## 授权
-* 该工具为开源工具，仅供学习交流
-* 如果您使用此工具用于您的研究，请引用我们的文章（DOI: 10.11821/dlxb20220）
+* 该工具为开源工具，仅供学习交流。
+* 如果您使用此工具用于您的研究，请引用我们的文章（DOI: 10.11821/dlxb20220）。
 ## 报告错误
-
+如果您遇到软件缺陷(即bug)，请报告该问题。请联系2938268503@qq.com
 
