@@ -1,5 +1,7 @@
 #!/usr/bin/env python
 #-*-coding :utf-8-*-
+# @Author : Xin He
+# @E-mail ：2938268503@qq.com
 import arcpy, os,csv
 import gjx as gj
 import sys
