@@ -2,7 +2,8 @@
 ArcGIS Python Toolbox for Optimal demand-supply analysis.
 
 ![Note](https://i.imgur.com/Ic8BA7C.png) **重要提示:** 该工具箱仅支持 **ArcGIS 10.2及以上**。
-* 作者: 孔云峰 (<https://github.com/yfkong>) | 翟石艳 (zsycenu@hotmail.com)
+* 代码贡献者：何新新 (2938268503@qq.com) | 罗静静 (ljj18238220679@126.com) 
+* 文章作者: 孔云峰 (<https://github.com/yfkong>) | 翟石艳 (zsycenu@hotmail.com)
 
 **目录**
 
