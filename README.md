@@ -18,12 +18,19 @@ ArcGIS Python Toolbox for Optimal demand-supply analysis.
 **Optimal demand-supply analysis** 是 **最优供需分配模型** 的 ArcGIS Python Toolbox,是孔云峰教授和翟石艳副教授提出新的最优供需分配的公共设施空间可达性计算方法([文章](DOI: 10.11821/dlxb20220)。该工具基于最优供需分配模型，将设施服务分配给需求者，根据分配结果计算空间可达性指标。给定服务设施与需求的空间分布，以最小化旅行成本为目标，顾及设施服务能力，采用经典的运输问题模型确定最优的服务供需分配方案，进而度量服务的空间可达性。该方法方法无需参数，计算高效，结果易于解释，在公共服务评价及设施布局规划方面具有应用潜力。
 ## 安装
 ### Step 1: 下载工具
-1. Click the green button (**[Clone or download](https://github.com/trirumisu/OSD/archive/refs/heads/main.zip)**) on the upper-right corner of this page to download the toolbox as a zip file.
-
-2. Depcompress the downloaded zip file.
+1. 点击页面右上角的绿色按钮下载 (**[Clone or download](https://github.com/trirumisu/OSD/archive/refs/heads/main.zip)**) 该工具的压缩包。
+2. 解压压缩文件至本地，将所有文件复制到文件目录中。
 
 ### Step 2: 环境设置
 
-1. 将 **cbc.exe所在路径** 设置到系统变量path中
+将 **cbc.exe所在路径** 设置到系统变量path中。
+
+### Step 2: 安装PuLP
+安装PuLP 2.5.1 (https://pypi.org/project/PuLP/) (推荐但不是必须)。
+
+### Step 3: 连接工具箱
+在ArcGIS中，导航到文件目录，单击工具。 
+
+## 使用
 
 
