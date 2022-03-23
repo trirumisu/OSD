@@ -1,4 +1,7 @@
-# -*- coding: utf-8 -*-
+#!/usr/bin/env python
+#-*-coding :utf-8-*-
+# @Author : Xin He
+# @E-mail ：2938268503@qq.com
 import sys,os,random,time,copy,math
 import arcpy
 from pulp import *
