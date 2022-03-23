@@ -4,7 +4,7 @@ ArcGIS Python Toolbox for Optimal demand-supply analysis.
 ![Note](https://i.imgur.com/Ic8BA7C.png) **重要提示:** 该工具箱仅支持 **ArcGIS 10.2及以上**。
 * 作者: 孔云峰 (<https://github.com/yfkong>) | 翟石艳 (zsycenu@hotmail.com)
 * 如果您使用此工具用于您的研究，请引用我们的文章（DOI: 10.11821/dlxb20220）
-* 本软件仅供学习交流
+
 
 **目录**
 
@@ -25,12 +25,27 @@ ArcGIS Python Toolbox for Optimal demand-supply analysis.
 
 将 **cbc.exe所在路径** 设置到系统变量path中。
 
-### Step 2: 安装PuLP
+### Step 3: 安装PuLP
 安装PuLP 2.5.1 (https://pypi.org/project/PuLP/) (推荐但不是必须)。
 
-### Step 3: 连接工具箱
+### Step 4: 连接工具箱
 在ArcGIS中，导航到文件目录，单击工具。 
 
-## 使用
+## 工具使用及结果
+### Step 1: 打开工具
+
+### Step 2: 输入数据
+
+### Step 3: 运行工具，输出结果
+
+## 支持数据格式
+* 供给点数据（必选）:
+* 需求点数据（必选）:
+* 路网数据（可选）:
+
+## 授权
+* 该工具为开源工具，仅供学习交流
+
+## 报告错误
 
 
