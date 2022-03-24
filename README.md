@@ -4,7 +4,7 @@ ArcGIS Python Toolbox for Optimal demand-supply analysis.
 ![Note](https://i.imgur.com/Ic8BA7C.png) **重要提示:** 该工具箱仅支持 **ArcGIS 10.3及以上**。
 * 代码贡献者：何新新 (2938268503@qq.com) | 罗静静 (ljj18238220679@126.com)
 * 文章作者:  翟石艳 (zsycenu@hotmail.com) | 何新新 (2938268503@qq.com)<br>
-&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;孔云峰 (<https://github.com/yfkong>)  | 罗静静 (ljj18238220679@126.com)  
+&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;孔云峰* (<https://github.com/yfkong>)  | 罗静静 (ljj18238220679@126.com)  
 &ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;宋根鑫 (shengliking@126.com)
 
 
@@ -22,7 +22,7 @@ ArcGIS Python Toolbox for Optimal demand-supply analysis.
 
 
 ## 说明
-**Optimal demand-supply analysis** 是 **最优供需分配模型** 的 ArcGIS Python Toolbox,是孔云峰教授和翟石艳副教授提出新的最优供需分配的公共设施空间可达性计算方法([文章](DOI: 10.11821/dlxb20220)。该工具基于最优供需分配模型，将设施服务分配给需求者，根据分配结果计算空间可达性指标。给定服务设施与需求的空间分布，以最小化旅行成本为目标，顾及设施服务能力，采用经典的运输问题模型确定最优的服务供需分配方案，进而度量服务的空间可达性。该方法方法无需参数，计算高效，结果易于解释，在公共服务评价及设施布局规划方面具有应用潜力。
+**Optimal demand-supply analysis** 模型和工具可用于公共设施空间可达性计算，由孔云峰教授和翟石艳副教授提出(2022)。该工具基于Python语言和ArcGIS10.3及以上平台运行。该方法的基本原理为，给定服务设施与需求的空间分布，以最小化旅行成本为目标，顾及设施服务能力，采用经典的运输问题模型确定最优的服务供需分配方案，进而计算服务的空间可达性指标。该方法无需参数，计算高效，结果易于解释，在公共服务评价及设施布局规划方面具有应用潜力。该方法的详细表述和案例分析见文章(翟石艳，何新新，孔云峰*，罗静静，宋根鑫.基于最优供需分配的公共设施空间可达性分析[J],地理学报，2022,77（4）：1-12. DOI: 10.11821/dlxb20220)。
 
 ## 安装
 ### Step 1: 下载工具
@@ -40,8 +40,8 @@ ArcGIS Python Toolbox for Optimal demand-supply analysis.
 在ArcGIS中，导航到文件目录，单击工具。 
 
 ## 数据准备
-提前准备好**供给点数据**（Shapefile或文件地理数据库要素类）、**需求点数据**（Shapefile或文件地理数据库要素类）、**路网数据**（可选）（网络数据集）。
-其中供给点需要含有供给数量的字段、需求点数据需要含有需求数据量的字段。网络数据集的具体构建见：https://desktop.arcgis.com/zh-cn/arcmap/latest/extensions/network-analyst/exercise-1-creating-a-network-dataset.html
+准备**供给点数据**（Shapefile或文件地理数据库要素类）、**需求点数据**（Shapefile或文件地理数据库要素类）、**路网数据**（可选）（网络数据集）。
+其中供给点数据需包含供给点数量字段、需求点数据需包含需求数据量字段。网络数据集的具体构建见：https://desktop.arcgis.com/zh-cn/arcmap/latest/extensions/network-analyst/exercise-1-creating-a-network-dataset.html
 
 ![daytype](https://github.com/trirumisu/OSD/blob/main/data.png)
 
@@ -64,7 +64,8 @@ ArcGIS Python Toolbox for Optimal demand-supply analysis.
 
 ## 授权
 * 该工具为开源工具，仅供学习交流。
-* 如果您使用此工具用于您的研究，请引用我们的文章（DOI: 10.11821/dlxb20220）。
+* 若使用此工具用于您的工作和学术研究，请引用我们的文章
+* 翟石艳，何新新，孔云峰*，罗静静，宋根鑫.基于最优供需分配的公共设施空间可达性分析[J],地理学报，2022,77（4）：1-12. DOI: 10.11821/dlxb20220
 
 ## 报告错误
 如果您遇到软件缺陷(即bug)，请报告该问题。请联系2938268503@qq.com
