@@ -14,15 +14,15 @@ class Toolbox(object):
     def __init__(self):
         """Define the toolbox (the name of the toolbox is the name of the   .pyt file)."""
         self.label = "OSD Toolbox"
-        self.alias = "Reassign the service between facilities and communities"
+        self.alias = "Optimal demand-supply analysis"
         # List of tool classes associated with this toolbox
         self.tools = [Tool]
 
 class Tool(object):
     def __init__(self):
         """Define the tool (tool name is the name of the class)."""
-        self.label = "Reassign the service between facilities and communities"
-        self.description = "Reassign the service between facilities and communities"
+        self.label = "optimal demand-supply analysis"
+        self.description = "optimal demand-supply analysis"
         self.canRunInBackground = False
 
     def getParameterInfo(self):
