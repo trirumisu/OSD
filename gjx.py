@@ -6,7 +6,7 @@ import sys,os,random,time,copy,math
 import arcpy
 from pulp import *
 reload(sys)
-sys.setdefaultencoding('utf8')
+sys.setdefaultencoding('utf-8')
 
 dataframe_s=[]
 dataframe_d=[]
