@@ -1,5 +1,5 @@
 #!/usr/bin/env python
-#-*-coding :utf-8-*-
+# -*- coding: utf-8 -*-
 # @Author : Xin He
 # @E-mail ：2938268503@qq.com
 import sys,os,random,time,copy,math
