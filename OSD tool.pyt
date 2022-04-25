@@ -1,4 +1,3 @@
-#!/usr/bin/env python
 #-*-coding :utf-8-*-
 # @Author : Xin He
 # @E-mail ：2938268503@qq.com
