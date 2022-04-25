@@ -27,7 +27,7 @@ ArcGIS Python Toolbox for Optimal demand-supply analysis.
 ## 安装
 ### Step 1: 下载工具
 1. 点击页面右上角的绿色按钮下载 (**[Clone or download](https://github.com/trirumisu/OSD/archive/refs/heads/main.zip)**) 该工具的压缩包。
-2. 解压压缩文件至本地，将所有文件复制到文件目录中。
+2. 解压压缩文件至本地，将所有文件复制到同一文件目录中。
 
 ### Step 2: 环境设置
 
