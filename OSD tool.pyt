@@ -21,8 +21,8 @@ class Toolbox(object):
 class Tool(object):
     def __init__(self):
         """Define the tool (tool name is the name of the class)."""
-        self.label = "optimal demand-supply analysis"
-        self.description = "optimal demand-supply analysis"
+        self.label = "Optimal demand-supply analysis"
+        self.description = "Optimal demand-supply analysis"
         self.canRunInBackground = False
 
     def getParameterInfo(self):
@@ -50,7 +50,7 @@ class Tool(object):
         net_w=arcpy.Parameter(name='net_w', displayName='Neywork layers', datatype=['DENetworkDataset'], direction='Input',parameterType='Optional')
         outfile=arcpy.Parameter(name='outfile', displayName='Output table', datatype='DETextfile', direction='Output',parameterType='Required')
         outfile_ly=arcpy.Parameter(name='outfile_ly', displayName='Output layer', datatype='DEFeatureClass', direction='Output',parameterType='Required')
-        net_me=arcpy.Parameter(displayName="impedance_attribute", name="impedance_attribute", datatype="GPString",parameterType='Optional', direction="Input")
+        net_me=arcpy.Parameter(displayName="Impedance_attribute", name="impedance_attribute", datatype="GPString",parameterType='Optional', direction="Input")
         net_me.filter.type = 'ValueList'
         net_me.filter.list = ['Length','Drivetime']
         return [feas,fld_supply,fead,fld_demand,dis_me,net_w,net_me,outfile,outfile_ly]
