@@ -81,12 +81,12 @@ class Tool(object):
         def cal_Manh():
             dist_ij=[[999999.999 for x in range(supply_len)] for y in range(demand_len)]
             arcpy.AddMessage("Calculating...")
-            if arcpy.Describe(fns).spatialReference.type=='Projected':
+            if arcpy.Describe(fns).spatialReference.type=='Projected' and arcpy.Describe(fnd).spatialReference.type=='Projected':
                 for i in range(demand_len):
                     for j in range(supply_len):
                         d3= (abs(datatable_d[i][1]-datatable_s[j][1])+ abs(datatable_d[i][2]-datatable_s[j][2]))
                         dist_ij[i][j]=d3
-            elif arcpy.Describe(fns).spatialReference.type=='Geographic':
+            elif arcpy.Describe(fns).spatialReference.type=='Geographic' and arcpy.Describe(fnd).spatialReference.type=='Geographic':
                 ref_name=arcpy.Describe(fns).spatialReference.GCSCode
                 sr = arcpy.SpatialReference(ref_name)
                 for i in range(demand_len):
@@ -97,20 +97,20 @@ class Tool(object):
                         d3=point1.angleAndDistanceTo(point2,"GEODESIC")[1]+point2.angleAndDistanceTo(point3,"GEODESIC")[1]  
                         dist_ij[i][j]=d3
             else:
-                arcpy.AddMessage("Please define the coordinate system")
+                arcpy.AddMessage("Please unified the coordinate system")
             arcpy.AddMessage("OD Matrix calculation completed")
             return dist_ij
         def cal_Eu():
             dist_ij=[[999999.999 for x in range(supply_len)] for y in range(demand_len)]
             arcpy.AddMessage("Calculating...")
-            if arcpy.Describe(fns).spatialReference.type=='Projected':            
+            if arcpy.Describe(fns).spatialReference.type=='Projected' and arcpy.Describe(fnd).spatialReference.type=='Projected':            
                 for i in range(demand_len):
                     for j in range(supply_len):
                         d2=pow(datatable_d[i][1]-datatable_s[j][1],2)
                         d2+=pow(datatable_d[i][2]-datatable_s[j][2],2)
                         d3=pow(d2,0.5)
                         dist_ij[i][j]=d3
-            elif arcpy.Describe(fns).spatialReference.type=='Geographic':
+            elif arcpy.Describe(fns).spatialReference.type=='Geographic' and arcpy.Describe(fnd).spatialReference.type=='Geographic':
                 ref_name=arcpy.Describe(fns).spatialReference.GCSCode
                 sr = arcpy.SpatialReference(ref_name)          
                 for i in range(demand_len):
@@ -121,7 +121,7 @@ class Tool(object):
                         dist_ij[i][j]=d3
 
             else:
-                arcpy.AddMessage("Please define the coordinate system")                       
+                arcpy.AddMessage("Please unified the coordinate system")                       
 
             arcpy.AddMessage("OD Matrix calculation completed")
             return dist_ij
