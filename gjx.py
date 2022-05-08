@@ -80,12 +80,12 @@ def TP_model_1(nodejs):
         s = 0
         for j in range(num_units):
             s += variables["x_" + str(i) + "_" + str(j)]
-        prob += s == nodes[i]
+        prob += s <= nodes[i]
     for k in range(num_units):
         s = 0
         for i in range(num_united):
             s += variables["x_" + str(i) + "_" + str(k)]
-        prob += s <= facilityCapacity[k]
+        prob += s == facilityCapacity[k]
 
 
     cbc = COIN_CMD()
