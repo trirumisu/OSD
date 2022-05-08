@@ -53,6 +53,27 @@ def TP_model(nodejs):
     #模型求解
     #初始化求解时间
     prob.solve(cbc)
+    if prob.status<0:
+        arcpy.AddMessage("错误。求解失败，请重新核对数据")
+    else:
+        arcpy.AddMessage("解析并输出求解结果")
+
+        assignsum = 0
+        list_c = []
+        for v in prob.variables():
+            if v.varValue > 0:
+                list_r = []
+                items = v.name.split('_')
+                i = int(items[1])
+                k = int(items[2])
+                dis=nodejs[i][k]
+                assign = v.varValue
+                list_r.append(i)
+                list_r.append(k)
+                list_r.append(assign)
+                list_r.append(dis)
+                list_c.append(list_r)
+    return list_c
 def TP_model_1(nodejs):
 
     aa=os.getcwd()
