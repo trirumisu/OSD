@@ -258,10 +258,11 @@ class Tool(object):
         gj.num_united=demand_len
         gj.facilityCapacity=[i[3] for i in datatable_s]
         gj.nodes=[i[3] for i in datatable_d]
-        results=gj.TP_model(dist_ij)
+        if sum([i[3] for i in datatable_s])>=sum([i[3] for i in datatable_d]):
+            results=gj.TP_model(dist_ij)
+        else:
+            results=gj.TP_model_1(dist_ij)
         arcpy.AddMessage("The problem has been sovled......")
-
-        idr_list=[i[0] for i in results]
         ids_list=[i[0] for i in datatable_s]
         idd_list=[i[0] for i in datatable_d]
 
