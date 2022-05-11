@@ -148,8 +148,12 @@ class Tool(object):
             # Stores the layer names that we will use later
             originsLayerName = subLayerNames["Origins"]
             destinationsLayerName = subLayerNames["Destinations"]
-            arcpy.na.AddLocations(outNALayer, originsLayerName, fnd, sort_field='OBJECTID')
-            arcpy.na.AddLocations(outNALayer, destinationsLayerName, fns, sort_field='OBJECTID')
+            try:
+                arcpy.na.AddLocations(outNALayer, originsLayerName, fnd, sort_field='OBJECTID')
+                arcpy.na.AddLocations(outNALayer, destinationsLayerName, fns, sort_field='OBJECTID')
+            except:
+                arcpy.na.AddLocations(outNALayer, originsLayerName, fnd, sort_field='FID')
+                arcpy.na.AddLocations(outNALayer, destinationsLayerName, fns, sort_field='FID')
             arcpy.na.Solve(outNALayer, "HALT")
 
             lry_list = arcpy.mapping.ListLayers(outNALayer)
